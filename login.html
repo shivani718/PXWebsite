@@ -8,6 +8,7 @@
 <!--<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script type="text/javascript">
        
+
     function login()
     {
         var userName=document.getElementById("username");
@@ -22,9 +23,25 @@
         }
     }
 </script> --> 
-<script type="text/javascript" src="js.js"></script>
+<!--<script type="text/javascript" src="js.js"></script>-->
 </head>
-<body>
+       <script type="text/javascript">
+  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-1");
+</script>
+<body   onload= "aptrinsic("identify",
+  {
+  //User Fields
+    //"id": Math.random()*10.toString()// Required for logged in app users
+     let m=Math.random()*10000;
+      L=m.toString();
+      "id":L.substring(0,3),
+      "email": "shivanicheemala99@gmail.com"
+}">
+       
     <div class="form">
                
                    <input type="text" placeholder="Username" id="username" required >
