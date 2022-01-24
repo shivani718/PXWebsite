@@ -8,6 +8,17 @@
 </script>
 <!-- Gainsight PX Tag-->
 
+      
+aptrinsic("identify",
+  {
+  //User Fields
+    //"id": Math.random()*10.toString()// Required for logged in app users
+     let m=Math.random()*10000;
+      L=m.toString();
+      "id":L.substring(0,3),
+      "email": "shivanicheemala99@gmail.com"
+}
+
 var Productname = "T.V";
 var Productbrand = "Panasonic";
 var Productprice = 90000;
