@@ -1,0 +1,114 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Home</title>
+<link rel="stylesheet" href="index.css">
+ <script type="text/javascript" src="js.js"></script>
+ 
+</head>
+<body>
+     <div class="nav-bar">
+         <img src="logo.jpeg">
+         <div class="menu-right">
+            <ul id="menu">
+             <li class="home-btn"><a href="home.html" target="_self">HOME</a></li>    
+             <li class="services-btn"><a href="books.html" target="_self">SERVICES</a></li>    
+             <li class="blogs-btn"><a href="blogs.html" target="_self">BLOGS</a></li>    
+             <li class="about-btn"><a href="iframe.html" target="_self">ABOUT</a></li>    
+             <li class="contacts-btn"><a href="contacts.html" target="_self">CONTACT</a></li>  
+             <li class="logout-btn"><a href="login.html" onclick="deleteAllCookies()" target="_self">LOGOUT</a></li>
+             </ul>
+         </div>
+     
+    
+     </div>   
+
+    <p class="homepx">Gainsight® Launches Gainsight PX, a Complete Product Experience Platform to Drive Subscription Growth
+B2B Product Teams Can Leverage Deep Product Insights and Personalize In-App Engagements to Build Products Customers Love to Use.</p>
+<img class="pxpic1"src="pxpic1.png" alt="Gainsight PX">
+ 
+ </br>
+ </br>
+
+<p><button type="button"><a href="https://shivani718.github.io/px/home.html?launch=guide">Tour this screen </button></a></p>
+<br>
+<br>
+<label for="cars">Choose a car:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+<label for="cars">Choose a dept:</label>
+
+<select name="cars" id="cars">
+  <option value="volvo">IT</option>
+  <option value="saab">CSE</option>
+  <option value="mercedes">MECH</option>
+  <option value="audi">ECE</option>
+</select>
+
+<h2>Animated Modal with Header and Footer</h2>
+
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...
+      <button type="button" class="btn btn-primary">Save changes</button>
+      <script>var user = { id: '99@gma' };
+var account = { id: 'PX_Company-2', config: true };
+
+aptrinsic('identify', user, account);</script></p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body>
+</html>

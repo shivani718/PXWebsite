@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>services</title>
+<link rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+	<body bgcolor="LightGray">
+    <div class="nav-bar">
+         <img src="logo.jpeg">
+         <div class="menu-right">
+            <ul id="menu">
+             <li class="home-btn"><a href="home.html" target="_self">HOME</a></li>    
+             <li class="services-btn"><a href="books.html" target="_self">SERVICES</a></li>    
+             <li class="blogs-btn"><a href="blogs.html" target="_self">BLOGS</a></li>    
+             <li class="about-btn"><a href="about.html" target="_self">ABOUT</a></li>    
+             <li class="contacts-btn"><a href="contacts.html" target="_self">CONTACT</a></li>  
+             <li class="logout-btn"><a href="login.html"onclick="deleteAllCookies()" target="_self">LOGOUT</a></li>
+             </ul>
+         </div>
+     
+    
+     </div>   
+  <p class="books"><b>Salesforce</b></p>
+<p class="books1">Salesforce helps you supercharge every part of your company that interacts with customers. Gainsight integrates with Salesforce to help you deliver exceptional outcomes and experiences for your customers as well as helps you centralize your existing customer data </p>
+    <p class="buttons"> <b>How satisfied are you ?</b> </p>
+    <button class="button button1">Excellent</button>
+    <button class="button button2">Very Good</button>
+    <button class="button button2">Good</button>
+    <button class="button button2">poor</button>
+
+<form class="radio-form" action="">
+  <p><strong>Do you wish to purchase our products?</strong></p>
+	</br>
+		</br>
+  <input type="radio" id="opt1" name="product" value="yes">
+  <label for="opt1">YES</label><br>
+  <input type="radio" id="opt2" name="product" value="no">
+  <label for="opt2">NO</label><br>
+  <br>
+  <input class="btn-sendmail" type="submit" value="Submit">
+</form>
+		<h3>please select the product you wish to buy</h3>
+
+			<select id="productid">
+				<option value="">--please choose a product--</option>
+				<option id="producttName" label="Product-1">product1</option>
+				<option id="productName" label="Product-2">product2</option>
+				<option id="productName" label="Product-3">product3</option>
+			</select>
+			
+			<script type="text/javascript">
+				document.getElementById('productid').addEventListener('change',function(){
+					if(this.selectedIndex==1){
+						alert(this.selectIndex);
+						document.getElementById("productName").innerHTML="product-1";
+						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
+					}
+					if(this.selectedIndex==2){
+						alert(this.selectIndex);
+						document.getElementById("productName").innerHTML="product-2";
+						aptrinsic("track","productchange",{"proname":"product-2","selected":true});
+					}
+					if(this.selectedIndex==3){
+						alert(this.selectIndex);
+						document.getElementById("productName").innerHTML="product-3";
+						aptrinsic("track","productchange",{"proname":"product-3","selected":true});
+					}
+				});
+			</script>
+</div>
+	</br> 
+        <span id="paymentbtn">
+
+    </span>
+
+</body>
+</html>
